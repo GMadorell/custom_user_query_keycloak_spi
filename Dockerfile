@@ -10,4 +10,4 @@ RUN mvn -f /home/app/pom.xml clean package
 # Package stage
 #
 FROM quay.io/keycloak/keycloak:11.0.2
-COPY --from=build /home/app/target/customer_user_query_keycloak_spi-1.jar /opt/jboss/keycloak/standalone/deployments/
+COPY --from=build /home/app/target/customer_user_query_keycloak_spi-0.0.1.jar /opt/jboss/keycloak/standalone/deployments/
